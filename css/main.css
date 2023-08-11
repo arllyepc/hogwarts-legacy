@@ -21,6 +21,16 @@ html {
   scroll-behavior: smooth;
   font-family: "Open Sans", sans-serif;
 }
+@media (min-width: 360px) and (max-width: 959px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media (max-width: 359px) {
+  html {
+    font-size: 80%;
+  }
+}
 
 img,
 svg {
@@ -55,6 +65,16 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  header .container nav {
+    display: none;
+  }
+}
+@media (max-width: 359px) {
+  header .container nav {
+    display: none;
+  }
 }
 header .container nav ul {
   display: flex;
@@ -211,7 +231,7 @@ header .container .box__info .box__logos img:hover {
 
 @keyframes cloud {
   0% {
-    background-position: 0px;
+    background-position: 100vw;
   }
   100% {
     background-position: -5440px;
