@@ -145,6 +145,7 @@ header .container .box__info .lang .lang-list {
 }
 header .container .box__info .lang .lang-list.active {
   display: flex;
+  align-items: flex-start;
 }
 header .container .box__info .lang .lang-list li {
   color: #fff;
