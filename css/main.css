@@ -113,6 +113,9 @@ header .container .box__info {
   gap: 1.5rem;
   align-items: center;
 }
+header .container .box__info .lang {
+  position: relative;
+}
 header .container .box__info .lang p {
   color: #fff;
   text-align: right;
@@ -127,6 +130,35 @@ header .container .box__info .lang p {
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+}
+header .container .box__info .lang .lang-list {
+  display: none;
+  position: absolute;
+  border-radius: 0.1875rem;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.3rem 1rem 0.3rem 0.5rem;
+  top: 1.5rem;
+  right: 0;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+header .container .box__info .lang .lang-list.active {
+  display: flex;
+}
+header .container .box__info .lang .lang-list li {
+  color: #fff;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+}
+header .container .box__info .lang .lang-list li:hover {
+  color: #f2c41f;
 }
 header .container .box__info .box__logos {
   display: flex;
